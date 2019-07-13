@@ -20,7 +20,8 @@ class Student
   end
   
   def self.drop_table
-    
+    	
+DROP TABLE [IF EXISTS] [schema_name.]table_name;
   end
   
   def save

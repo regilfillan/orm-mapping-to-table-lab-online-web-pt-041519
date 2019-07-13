@@ -9,10 +9,10 @@ class Student
    end
   
   def self.create_table
-    "CREATE TABLE students (
+    CREATE TABLE students (
         id INTEGER PRIMARY KEY,
         name TEXT,
-        grade INTEGER);"
+        grade INTEGER);
   end
   
   def self.drop_table

@@ -20,10 +20,8 @@ class Student
   end
    
   def self.drop_table
-    sql = <<-SQL
-    DROP TABLE IF EXISTS self.students;
-    SQL
-    DB[:conn].execute(sql) 
+    sql = "DROP TABLE IF EXISTS students"
+    DB[:conn].execute(sql)
   end 
   
   def save

@@ -9,7 +9,7 @@ class Student
    end
   
   def self.create_table
-    sql =  <<-SQL 
+   
       CREATE TABLE IF NOT EXISTS students (
         id INTEGER PRIMARY KEY, 
         name TEXT, 
@@ -21,7 +21,7 @@ class Student
   
   def self.drop_table
     	
-DROP TABLE [IF EXISTS] [schema_name.]table_name;
+    DROP TABLE [IF EXISTS] [schema_name.]table_name;
   end
   
   def save
